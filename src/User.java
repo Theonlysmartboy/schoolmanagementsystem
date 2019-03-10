@@ -1,6 +1,5 @@
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.HeadlessException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -13,7 +12,6 @@ import java.sql.Statement;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
-import javax.swing.JFrame;
 
 import javax.swing.JInternalFrame;
 import javax.swing.JLabel;
@@ -190,6 +188,7 @@ public class User extends JInternalFrame implements ActionListener {
 
     }//constructor closed
 
+    @Override
     public void actionPerformed(ActionEvent e) {
 
         if (e.getActionCommand().equalsIgnoreCase("View")) {

@@ -30,9 +30,9 @@ public class frmAdminMDI extends JFrame implements ActionListener {
     private JMenuItem mnuViewStdDetails;
     private JMenuItem mnuMemList;
     private JMenuItem mnuMarkList;
-    private JMenuItem mnuAddSubs,mnuEditSubs,mnuDelSubs;
+    private JMenuItem mnuAddSubs, mnuEditSubs, mnuDelSubs;
     private JMenuItem mnuSubAlloc;
-    private JMenuItem mnuCalc,  mnuNotepad;
+    private JMenuItem mnuCalc, mnuNotepad;
     public static JDesktopPane desktop;
 
     public frmAdminMDI() {
@@ -46,7 +46,7 @@ public class frmAdminMDI extends JFrame implements ActionListener {
         mnuAccounts = new JMenu("Accounts");
         mnuStdDetails = new JMenu("Student details");
         mnuView = new JMenu("View");
-        mnuOptions=new JMenu("Options");
+        mnuOptions = new JMenu("Options");
         mnuTools = new JMenu("Tools");
 
         mnuNewUser = new JMenuItem("New User");
@@ -59,10 +59,10 @@ public class frmAdminMDI extends JFrame implements ActionListener {
         mnuViewStdDetails = new JMenuItem("Student Details");
         mnuMemList = new JMenuItem("Member List");
         mnuMarkList = new JMenuItem("Mark List");
-        mnuAddSubs=new JMenuItem("Add Subjects");
-        mnuEditSubs=new JMenuItem("Edit Subjects");
-        mnuDelSubs=new JMenuItem("Delete Subjects");
-        mnuSubAlloc=new JMenuItem("Subject Allocation");
+        mnuAddSubs = new JMenuItem("Add Subjects");
+        mnuEditSubs = new JMenuItem("Edit Subjects");
+        mnuDelSubs = new JMenuItem("Delete Subjects");
+        mnuSubAlloc = new JMenuItem("Subject Allocation");
         mnuNotepad = new JMenuItem("Calculator");
         mnuCalc = new JMenuItem("Calculator");
 
@@ -102,14 +102,13 @@ public class frmAdminMDI extends JFrame implements ActionListener {
         mnuOptions.add(mnuEditSubs);
         mnuOptions.add(mnuDelSubs);
         mnuOptions.addSeparator();
-        mnuOptions.add(mnuSubAlloc);        
+        mnuOptions.add(mnuSubAlloc);
         mnuTools.add(mnuCalc);
         mnuCalc.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C, KeyEvent.CTRL_MASK));
         mnuCalc.setIcon(new ImageIcon(ClassLoader.getSystemResource("images/calc.png")));
         mnuTools.add(mnuNotepad);
         mnuNotepad.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_U, KeyEvent.CTRL_MASK));
         mnuNotepad.setIcon(new ImageIcon(ClassLoader.getSystemResource("images/notepad.png")));
-
 
         menubar.add(mnuAccounts);
         menubar.add(mnuStdDetails);
@@ -130,11 +129,12 @@ public class frmAdminMDI extends JFrame implements ActionListener {
         mnuEditSubs.addActionListener(this);
         mnuDelSubs.addActionListener(this);
         mnuSubAlloc.addActionListener(this);
-        mnuCalc.addActionListener(this);        
+        mnuCalc.addActionListener(this);
         mnuNotepad.addActionListener(this);
         this.setJMenuBar(menubar);
         this.add(desktop);
     }//constructor closed
+
     @Override
     public void actionPerformed(ActionEvent e) {
         try {
@@ -195,23 +195,23 @@ public class frmAdminMDI extends JFrame implements ActionListener {
                 desktop.add(frm);
                 frm.setVisible(true);
             }
-            if(e.getSource()==mnuAddSubs){
-                AddSubjects frm=new AddSubjects();
+            if (e.getSource() == mnuAddSubs) {
+                AddSubjects frm = new AddSubjects();
                 desktop.add(frm);
                 frm.setVisible(true);
             }
-            if(e.getSource()==mnuEditSubs){
-                EditSubjects frm=new EditSubjects();
+            if (e.getSource() == mnuEditSubs) {
+                EditSubjects frm = new EditSubjects();
                 desktop.add(frm);
                 frm.setVisible(true);
             }
-             if(e.getSource()==mnuDelSubs){
-                DelSubjects frm=new DelSubjects();
+            if (e.getSource() == mnuDelSubs) {
+                DelSubjects frm = new DelSubjects();
                 desktop.add(frm);
                 frm.setVisible(true);
             }
-            if(e.getSource()==mnuSubAlloc){
-                SubjectAllocation frm=new SubjectAllocation();
+            if (e.getSource() == mnuSubAlloc) {
+                SubjectAllocation frm = new SubjectAllocation();
                 desktop.add(frm);
                 frm.setVisible(true);
             }

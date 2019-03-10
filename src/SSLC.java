@@ -25,14 +25,14 @@ public class SSLC extends JInternalFrame implements ActionListener {
     private JButton btnClose;
     private JButton btnSave;
     private int rollno;
-    private JPanel btnPanel,  txtPanel;
+    private JPanel btnPanel, txtPanel;
     private JTable table;
     private DefaultTableModel model;
     private JComboBox cmbSubjects;
-    private JLabel lblSubName,  lblCode,  lblInternal,  lblTheory,  lblPractical;
-    private JTextField txtCode,  txtInternal,  txtTheory,  txtPractical,  txtTotal;
+    private JLabel lblSubName, lblCode, lblInternal, lblTheory, lblPractical;
+    private JTextField txtCode, txtInternal, txtTheory, txtPractical, txtTotal;
     private TableColumn col;
-    private JButton btnAdd,  btnDel;
+    private JButton btnAdd, btnDel;
     private int semester;
     private String tablename = "";
 
@@ -94,6 +94,7 @@ public class SSLC extends JInternalFrame implements ActionListener {
         cmbSubjects.addActionListener(this);
     }
 
+    @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == btnClose) {
             setVisible(false);

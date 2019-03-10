@@ -20,7 +20,7 @@ import javax.swing.JTextArea;
 public class MembersList extends JInternalFrame implements ActionListener {
 
     private JPanel buttonPanel;
-    private JButton btnCancel,  btnRefresh;
+    private JButton btnCancel, btnRefresh;
     private JPanel rptPanel;
     private JTabbedPane listsTabs;
     private JTextArea listPane;
@@ -57,6 +57,8 @@ public class MembersList extends JInternalFrame implements ActionListener {
 
         printUsersList();
     }//constructor closed
+
+    @Override
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == btnCancel) {
             dispose();

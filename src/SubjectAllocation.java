@@ -108,6 +108,7 @@ public class SubjectAllocation extends JInternalFrame implements ActionListener 
         }
     }
 
+    @Override
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == cmbSem || ae.getSource() == cmbCourse) {
             loadTableValues();

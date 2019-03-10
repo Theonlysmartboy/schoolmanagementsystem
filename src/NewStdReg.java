@@ -179,6 +179,7 @@ public class NewStdReg extends JInternalFrame implements ActionListener {
 
     }//constructor closed
 
+    @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getActionCommand().equalsIgnoreCase("Save")) {
             try {

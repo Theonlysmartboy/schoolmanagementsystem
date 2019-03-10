@@ -73,6 +73,7 @@ public class EditSubjects extends JInternalFrame implements ActionListener {
     }//constructor closed
 
     @SuppressWarnings("empty-statement")
+    @Override
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == btnSave) {
             try {

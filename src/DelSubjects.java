@@ -60,6 +60,7 @@ public class DelSubjects extends JInternalFrame implements ActionListener {
         loadSubjectCodes();
     }//constructor closed
 
+    @Override
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == btnDelete) {
             try {

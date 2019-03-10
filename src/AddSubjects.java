@@ -68,6 +68,7 @@ public class AddSubjects extends JInternalFrame implements ActionListener {
         btnCancel.addActionListener(this);
     }//constructor closed
 
+    @Override
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == btnSave) {
             try {

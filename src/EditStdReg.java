@@ -188,6 +188,7 @@ public class EditStdReg extends JInternalFrame implements ActionListener {
 
     }//constructor closed
 
+    @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getActionCommand().equalsIgnoreCase("Update")) {
             try {

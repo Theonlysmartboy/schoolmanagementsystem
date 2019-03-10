@@ -53,6 +53,7 @@ public class MarkS extends JInternalFrame implements ActionListener {
 
     }
 
+    @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == jb1) {
             SSLC frm = new SSLC(regn,"First Semester marks",1);
